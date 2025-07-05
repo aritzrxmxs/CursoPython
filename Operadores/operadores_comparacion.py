@@ -19,3 +19,9 @@ resultado = a >= b
 print(f'Resultado a >= b es: {resultado}')
 
 # Operador menor que
+resultado = a < b
+print(f'Resultado a < b es: {resultado}')
+
+# Operador menor o igual que
+resultado = a <= b
+print(f'Resultado a <= b es: {resultado}')
