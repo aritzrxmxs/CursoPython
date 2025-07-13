@@ -1,12 +1,19 @@
 print('*** Lista de suscriptores ***')
+# Definimos el set inicial
 
-suscriptores = {'aritz@mail.com', 'victoria@mail.com', 'carlos@mail.com'}
+# suscriptores = {} # aqui se define un diccionario vacío
+suscriptores = set()
+
+numero_suscriptores = int(input('Di el numero de suscriptores: '))
+
+for _ in range(numero_suscriptores):
+    suscriptores.add(input('Nuevo suscriptor(email): '))
 
 
 
 # Verificar si un nuevo suscriptor ya esta
 
-nuevo_suscriptor = 'raul@mail.com'
+nuevo_suscriptor = input('Proporciona el nuevo suscriptor: ')
 
 if nuevo_suscriptor in suscriptores:
     print('El nuevo suscriptor ya está en la lista')
@@ -17,7 +24,7 @@ print(f'Lista de suscriptores: {suscriptores}')
 
 # Eliminamos un suscriptor
 
-suscriptor_eliminar = 'aritz@mail.com'
+suscriptor_eliminar = input('Proporciona un suscriptor a eliminar: ')
 suscriptores.remove(suscriptor_eliminar)
 print(f'El suscriptor {suscriptor_eliminar} se ha eliminado.')
 print(f'Lista de suscriptores: {suscriptores}')
