@@ -47,8 +47,14 @@ if __name__ == '__main__':
     coche1.marca = 'Kia 2'
     coche1.modelo = 'Ceed 2' # Esto no es una buena practica
     coche1.color = 'Blanco 2' # Ignora la modificacion porque es privado
+    # Intentar agregar un nuevo atributo
+    setattr(coche1, 'nuevo_atributo', 'Valor nuevo atributo')
     coche1.conducir()
+    print(coche1.nuevo_atributo)
     # Atributo marca coche 1
     coche1.marca = 'Kia 3'
     print(f'Atributo marca coche1: {coche1.marca}')
+    # Segundo objeto
+    coche2 = Coche('Toyota', 'Yaris', 'Negro')
+    coche2.conducir()
 
